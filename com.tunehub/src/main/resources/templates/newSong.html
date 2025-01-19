@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub: Add New Song</title>
+
+<link rel="stylesheet" th:href="@{/css/playlist.css}">
+</head>
+<body>
+<nav id="navbar">
+    <ul>
+      <li class="ho"><a href="adminHome">Home</a></li>
+      <li class="ho"><a href="newSong">Add A New Song</a></li>
+      <li class="ho"><a href="viewadminSongs">View All Songs</a></li>
+       <li class="ho"><a href="createPlaylist">Create Playlist</a></li>
+        <li class="ho"><a href="viewPlaylists">View All Playlists</a></li>
+        <li class="ho"><a href="#deletePlaylist">Delete All Playlists</a></li>
+      <li class="lo"><a href="login">Logout</a></li>
+      
+    </ul>
+  </nav>
+<div class="con">
+<form action="addSong" method="post">
+
+<label>Song Name</label>
+<input type="text" name="name" />
+<br>
+<label>Song Artist</label>
+<input type="text" name="artist" />
+<br>
+
+<label>Song genre</label>
+<input type="text" name="genre" />
+<br>
+
+<label>Song Link</label>
+<input type="text" name="link" />
+<br>
+
+<input type="submit" value="ADD SONG" />
+</form>
+</div>
+</body>
+</html>

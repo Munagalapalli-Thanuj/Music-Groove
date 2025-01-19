@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub: Login</title>
+
+<link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+<!-- Navbar -->
+ <nav id="navbar">
+    <ul>
+      <li class="ho"><a href="index">Home</a></li>
+      <li class="ho"><a href="about">About</a></li>
+      <li class="ho"><a href="contact">Contact US</a></li>
+      
+      <li class="re"><a href="register">Register</a></li>
+    </ul>
+  </nav>
+  
+ <h1>LOGIN</h1>
+<div class="f1">
+<form action="validate" method="post" >
+	
+	<label>Email : </label>
+	<input type = "email" name = "email"/>
+	<br>
+	<label>Password : </label>
+	<input type = "password" name = "password"/>
+	<br>
+	
+	<input type="submit" value="LOGIN"/>
+	
+</form>
+</div>
+</body>
+</html>

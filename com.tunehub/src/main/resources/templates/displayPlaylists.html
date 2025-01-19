@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub: Display Playlists</title>
+
+<link rel="stylesheet" th:href="@{/css/playlist.css}">
+<style type="text/css">
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+    <ul>
+      <li class="ho"><a href="adminHome">Home</a></li>
+      <li class="ho"><a href="newSong">Add A New Song</a></li>
+     <li class="ho"><a href="viewadminSongs">View All Songs</a></li>
+       <li class="ho"><a href="createPlaylist">Create Playlist</a></li>
+        <li class="ho"><a href="viewPlaylists">View All Playlists</a></li>
+        <li class="ho"><a href="#deletePlaylist">Delete All Playlists</a></li>
+      <li class="lo"><a href="login">Logout</a></li>
+      
+    </ul>
+  </nav>
+<div class="con">
+	<table border>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Songs</th>
+				
+			</tr>
+
+		</thead>
+<!-- Here we are using thymle code for fetchings songs on to the table -->
+		<tbody>
+		<!-- Here we are creating a song attribute and using songs attribute we created in songs controller in view songs -->
+			<tr th:each="plist:${allPlaylists}">
+			<!-- Fetching each name and so on by attribute -->
+				<td th:text="${plist.name}"></td>
+				<td >
+				<ul>
+				<li th:each="song:${plist.songs}" >
+				<span th:text="${song.name}"></span>
+				<audio controls>
+				<source th:src="${song.link}" type="audio/mpeg">
+				</audio>
+				</li>
+				</ul>
+				
+				</td>
+				
+			</tr>
+
+		</tbody>
+	</table>
+</div>
+</body>
+</html>

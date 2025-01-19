@@ -1,0 +1,29 @@
+body{
+	background-color: #1b1b32;
+	color: #f5f6f7;
+}
+h1 {
+	margin: 1em auto;
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+}
+p{
+	margin: 1em auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.links{
+	 text-align: center;
+}
+
+a:link {
+  background-color: #8080ff;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 20%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub: Register</title>
+
+<link rel="stylesheet" th:href="@{/css/register.css}">
+</head>
+<body>
+<!-- Navbar -->
+ <nav id="navbar">
+    <ul>
+      <li class="ho"><a href="index">Home</a></li>
+      <li class="ho"><a href="about">About</a></li>
+      <li class="ho"><a href="contact">Contact US</a></li>
+      <li class="lo"><a href="login">Login</a></li>
+      
+    </ul>
+  </nav>
+ <h1>REGISTER</h1>
+<div class="f2">
+<form action="register" method="post">
+	<label>User name : </label>
+	<input type = "text" name = "username"/>
+	<br>
+	<br>
+	<label>Email : </label>
+	<input type = "email" name = "email"/>
+	<br>
+	<br>
+	<label>Password : </label>
+	<input type = "password" name = "password"/>
+	<br>
+	<br>
+	<label>Gender : </label>
+	M<input type="radio" name = "gender" value = "male"/>
+	F<input type = "radio" name = "gender" value = "female"/>
+	0<input type = "radio" name = "gender" value = "other"/>
+	<br>
+	<br>
+	<label>Role : </label>
+	Admin<input type = "radio" name = "role" value = "admin"/>
+	Customer<input type = "radio" name = "role" value = "customer"/>
+	<br>
+	<br>
+	<label>Address : </label>
+	<textarea name = "address"></textarea>
+	<br>
+	
+	<input type="submit"/>
+</form>
+</div>
+</body>
+</html>

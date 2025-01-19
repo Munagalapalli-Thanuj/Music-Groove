@@ -1,0 +1,90 @@
+body {
+	background-color: #1b1b32;
+	color: #f5f6f7;
+	 margin: 0;
+    font-family: Arial, sans-serif;
+}
+h1 {
+	margin-top: 80px;
+	text-align: center;
+	font-size: 80px;
+}
+
+p {
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+.f1 {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	
+}
+
+input[type=email], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	
+}
+
+input[type="submit"] {
+	background-color: #561575;
+	color: white;
+	border-color: #561575;
+	padding: 15px 32px;
+	font-size: 16px;
+	margin: 18px 15px;
+	cursor: pointer;
+	margin-left: 80px;
+}
+
+
+
+
+
+
+
+#navbar {
+  background-color: #f5f6f7;
+	color: black;
+  position: fixed;
+  top: 0;
+ 
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar .ho {
+  float: left;
+}
+
+#navbar .lo, .re {
+  float: right;
+}
+
+#navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}

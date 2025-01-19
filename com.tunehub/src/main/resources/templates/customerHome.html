@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub: Customer Homer</title>
+
+<link rel="stylesheet" th:href="@{/css/song.css}">
+</head>
+<body>
+<!-- Navbar -->
+ 
+
+
+
+
+
+
+
+<h1>Music Groove: CUSTOMER</h1>
+
+	<div th:unless="${isPremium}" class="non-premium">
+	<nav id="navbar">
+    <ul>
+      <li class="ho"><a href="#index">Home</a></li>
+      <li class="ho"><a href="about">About</a></li>
+      <li class="ho"><a href="contact">Contact US</a></li>
+      
+      <li class="lo"><a href="login">Logout</a></li>
+      
+    </ul>
+  </nav>
+		<p>Please sing up to premium to continue to listen to</p>
+		<a id="p"href="pay">Get Premium</a> <br> <br>
+		
+	</div>
+	
+	<div th:if="${isPremium}" class="premium">
+	<nav id="navbar">
+    <ul>
+      <li class="ho"><a href="index">Home</a></li>
+      <li class="ho"><a href="viewSongs">View All Songs</a></li>
+      <li class="ho"><a href="createFavourites">Create Favourites</a></li>
+       <li class="ho"><a href="viewFavourites">View All Favourites</a></li>
+      <li class="lo"><a href="login">Logout</a></li>
+      
+    </ul>
+  </nav>
+  </div>
+<!--  		
+		<a href="viewSongs">View All Songs</a>
+<br>
+<br>
+<a href="createFavourites">Create Favourites</a>
+<br>
+<br>
+<a href="viewFavourites">View All Favourites</a>
+	</div>
+-->
+</body>
+</html>
